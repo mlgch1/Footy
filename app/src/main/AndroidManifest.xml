@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.kitstop.score"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        android:versionCode="1"
+        android:versionName="5.0.1">
+    -->
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19"/>
+
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="com.kitstop.score.GlobalClass"
+        android:allowBackup="true"
+        android:icon="@drawable/scat"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light">
+
+        <service android:name="Usb_Service"/>
+
+        <activity
+            android:name="com.kitstop.score.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/MyCustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+
+        </activity>
+        <activity
+            android:name="com.kitstop.score.SplashActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name="com.kitstop.score.HomeTeamActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AddTeamActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AwayTeamActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AddHomePlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AddAwayPlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.SetGameDateActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.SetGroundActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.TestActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.PrintActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.SetTimeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.OtherActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.ParamsActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.DisclaimerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AboutScorerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.PasswordActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name=".SetupBatteryActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.LogActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.ModeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.WiFiActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.HomePlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.DeleteHomePlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.NotPlayingHomePlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.AwayPlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.DeleteAwayPlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kitstop.score.NotPlayingAwayPlayerActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"/>
+    </application>
+</manifest>

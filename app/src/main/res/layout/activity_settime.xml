@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp" >
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/clock_settings"
+        android:textColor="#FFFF00"
+        android:textSize="@dimen/f_edit_heading1" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        android:background="@color/yellow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radio_group_up_dn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/clock_count_up" />
+
+            <RadioButton
+                android:id="@+id/radio_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/clock_count_down" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        android:background="@color/yellow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+        	android:id="@+id/l_of_q"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/length_of_quarter"
+            android:textColor="#FFFF00"
+            android:textSize="@dimen/f_edit_heading2" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:ems="10"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:text="@string/_20" >
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        android:background="@color/yellow" />
+
+    <Button
+        android:id="@+id/b_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/b_bott_size"
+        android:background="@drawable/button3"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:onClick="onClick_Set_Time"
+        android:text="@string/ok"
+        android:textSize="@dimen/f_bott_button" />
+    </LinearLayout>
+    
+</RelativeLayout>

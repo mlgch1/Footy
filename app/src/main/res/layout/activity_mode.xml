@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260dp"
+    android:layout_height="330dp"
+    android:background="@color/grey" >
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/grey"
+        android:text="@string/system_modes"
+        android:textColor="#0000ff"
+        android:textSize="@dimen/f_team" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330sp"
+        android:layout_below="@+id/mode"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/b_mode_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55sp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick_Mode_1"
+            android:text="@string/mode_1_all_functons" />
+
+        <Button
+            android:id="@+id/b_mode_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick_Mode_2"
+            android:text="@string/mode_2_scoring_and_timing" />
+
+<!--         <Button
+            android:id="@+id/b_mode_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick_Mode_3"
+            android:text="@string/mode_3_manager_functions" />
+
+        <Button
+            android:id="@+id/b_mode_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="20dp"
+            android:onClick="onClick_Mode_4"
+            android:text="@string/mode_4_manager_functions_with_wifi" />
+ -->    </LinearLayout>
+
+</RelativeLayout>

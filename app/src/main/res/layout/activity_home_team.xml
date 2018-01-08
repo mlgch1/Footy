@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="600dp"
+    android:background="@color/grey" >
+
+    <TextView
+        android:id="@+id/hometeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/grey"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_home_team"
+        android:textColor="#0000ff"
+        android:textSize="@dimen/f_team" />
+
+    <Button
+        android:id="@+id/b_add"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/b_bott_size"
+        android:layout_below="@+id/hometeam"
+		android:textSize="@dimen/f_bott_button"   
+        android:text="@string/add" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10sp"
+        android:onClick="onClick_AddHomeTeam"
+        android:background="@drawable/button2" />
+    
+    <ListView
+        android:id="@+id/home_team_list"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/b_add"
+        android:background="@color/white"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="2sp" >
+
+    </ListView>
+
+</RelativeLayout>

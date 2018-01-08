@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="660dp" >
+
+    <TextView
+        android:id="@+id/deletehomeplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delete_a_home_player"
+        android:textColor="#FFFF00"
+        android:textSize="@dimen/f_edit_heading1" />
+
+    <ListView
+        android:id="@+id/home_player_list_1_d"
+        android:layout_width="300sp"
+        android:layout_height="540sp"
+        android:layout_below="@id/deletehomeplayer"
+        android:layout_marginLeft="70sp"
+        android:divider="#ff0000"
+        android:dividerHeight="2dp"
+        android:fadeScrollbars="false" >
+    </ListView>
+
+    <Button
+        android:id="@+id/b_done"
+        android:layout_width="80sp"
+        android:layout_height="@dimen/b_s_size"
+        android:layout_below="@id/home_player_list_1_d"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button3"
+        android:onClick="onClick_Done"
+        android:text="@string/done"
+        android:textSize="@dimen/f_bott_button" />
+
+</RelativeLayout>

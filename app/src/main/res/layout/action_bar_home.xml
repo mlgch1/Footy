@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/a_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onClick_selectHomeTeam"
+        android:text="@string/action_sel_home"
+        android:textColor="#ff0000"
+		android:background="@color/yellow"
+        android:textSize="@dimen/f_heading" />
+
+</LinearLayout>

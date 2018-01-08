@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="200dp" >
+
+    <TextView
+        android:id="@+id/addplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_a_player_a"
+        android:textColor="#FFFF00"
+        android:textSize="@dimen/f_edit_heading1" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addplayer"
+        android:layout_marginLeft="10dp"
+        android:text="@string/no"
+        android:textColor="#FFFF00"
+        android:textSize="@dimen/f_edit_heading2" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addplayer"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/no"
+        android:text="@string/name"
+        android:textColor="#FFFF00"
+        android:textSize="@dimen/f_edit_heading2" />
+
+    <LinearLayout
+        android:id="@+id/editBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/no"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editNo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_player_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/b_bott_size"
+        android:layout_below="@+id/editBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button3"
+        android:onClick="onClick"
+        android:text="@string/ok"
+        android:textSize="@dimen/f_bott_button" />
+
+</RelativeLayout>

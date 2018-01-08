@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kitstop.score.MainActivity" >
+
+
+    <item android:id="@+id/action_s_error"
+        android:title="@string/_"
+        android:actionLayout="@layout/action_bar_error"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_mode"
+        android:title="@string/_"
+        android:actionLayout="@layout/action_bar_mode"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_reset"
+          android:title="@string/action_reset"
+          android:actionLayout="@layout/action_bar_reset"    
+          android:showAsAction="always" />
+
+    <item android:id="@+id/action_sel_home"
+          android:title="@string/action_sel_home"
+          android:actionLayout="@layout/action_bar_home"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/action_sel_away"
+          android:title="@string/action_sel_away"
+          android:actionLayout="@layout/action_bar_away"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/action_game_date"
+          android:title="@string/set_game_date"
+          android:actionLayout="@layout/action_bar_date"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/action_other"
+          android:title="@string/action_other"
+          android:actionLayout="@layout/action_bar_other"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/action_exit"
+          android:title="@string/action_exit"
+          android:actionLayout="@layout/action_bar_exit"
+          android:showAsAction="always" />
+
+    <item android:id="@+id/clock"
+          android:title="@string/action_title"
+          android:actionLayout="@layout/action_bar_clock"
+          android:showAsAction="always" />
+
+</menu>

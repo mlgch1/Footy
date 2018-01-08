@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/print_reports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/grey"
+        android:text="@string/print_reports"
+        android:textColor="#0000ff"
+        android:textSize="@dimen/f_team" />
+
+    <Button
+        android:id="@+id/b_game"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/b_bott_size"
+        android:layout_below="@+id/print_reports"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button2"
+        android:onClick="onClick_game_Report"
+        android:text="@string/game_report"
+        android:textSize="@dimen/f_bott_button" />
+
+<!--
+    <Button
+    android:id="@+id/b_home"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_height="@dimen/b_bott_size"
+    android:layout_below="@+id/b_game"
+    android:textSize="@dimen/f_bott_button"
+    android:text="@string/home_team_report"
+    android:layout_marginBottom="10sp"
+    android:onClick="onClick_HomeTeam_Report"
+    android:background="@drawable/button2" />
+
+    <Button
+    android:id="@+id/b_away"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_height="@dimen/b_bott_size"
+    android:layout_below="@+id/b_home"
+    android:textSize="@dimen/f_bott_button"
+    android:text="@string/away_team_report"
+    android:layout_marginBottom="10sp"
+    android:onClick="onClick_AwayTeam_Report"
+    android:background="@drawable/button2" />
+-->
+
+</RelativeLayout>

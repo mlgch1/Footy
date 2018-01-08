@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/option2"
+        android:title="@string/add_a_goal"/>
+    <item
+        android:id="@+id/option3"
+        android:title="@string/sub_a_goal"/>
+    <item
+        android:id="@+id/option4"
+        android:title="@string/add_a_behind"/>
+    <item
+        android:id="@+id/option5"
+        android:title="@string/sub_a_behind"/>
+
+</menu>
